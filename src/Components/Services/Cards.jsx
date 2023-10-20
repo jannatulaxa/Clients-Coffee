@@ -23,7 +23,7 @@ const Cards = ({ data }) => {
             onClick={() => handleBrandCatagory(card.brand_name)}
             to={`/addProducts/${card.brand_name}`}
           >
-            <div className=" h-[15rem] md:w-96   mb-6" data-aos="flip-left">
+            <div className=" mx-auto h-[15rem] md:w-96   mb-6" data-aos="flip-left">
               <figure className="flex justify-center items-center">
                 <img className="h-52 w-full" src={card.image} alt="Shoes" />
               </figure>

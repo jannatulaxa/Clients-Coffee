@@ -9,7 +9,7 @@ const Home = () => {
         <div>
             
             <Services data={data}></Services>
-            <Gallery data={data}></Gallery>
+            <Gallery></Gallery>
             
         </div>
     );

@@ -1,74 +1,24 @@
-import img1 from "../../assets/gallery/1.jpg"
-import img2 from "../../assets/gallery/2.jpg"
-import img3 from "../../assets/gallery/3.jpg"
-import img4 from "../../assets/gallery/4.jpg"
-import img5 from "../../assets/gallery/5.jpg"
-import img6 from "../../assets/gallery/6.jpg"
+import imLogo from "../../assets/icons/01.png"
+import gallery from "../../assets/gallery/gallary.png"
+import Gallery2 from "./Gallery2";
+import Gallery3 from "./Gallery3";
 
-const Gallery = ({data}) => {
+const Gallery = () => {
   return (
-    <div className="bg-black pt-20">
+    <div className=" pt-20 galleryBanner">
+      <Gallery2></Gallery2>
       <div className="w-[88%] mx-auto pb-10">
-      <div className="md:w-[40rem] mx-auto  pb-10">
-        <p className="font-bold text-4xl md:text-6xl text-white text-center py-2">
-          GALLERY
+      <div className="md:w-[40rem] mx-auto py-5 pb-10">
+        <p className="font-bold text-xl md:text-3xl text-[#CF8613] text-center py-2">
+        Photos of Coffee Palace
         </p>
-        <div className="h-1 bg-red-600 w-80 mx-auto"></div>
-        <p className="text-center font-thin text-[#868686e4] text-2xl">Where Music Comes to Life</p>
+        <div className="flex justify-center  items-center gap-x-4"><div className="w-[10rem] h-[1px] bg-[#CF8613]" />
+        <img className="w-[3rem]" src={imLogo} alt="imLogo" />
+        <div className="w-[10rem] h-[1px] bg-[#CF8613]" /></div>
       </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
-          
-            <div  data-aos="flip-left" className="lg:col-span-1 lg:row-span-1">
-              <figure>
-                <img
-                  src={img1}
-                  alt="Picture"
-                />
-              </figure>
-            </div>
-            <div  data-aos="flip-left" className="lg:col-span-1 lg:row-span-1">
-              <figure>
-                <img
-                  src={img2}
-                  alt="Picture"
-                />
-              </figure>
-            </div>
-            <div  data-aos="flip-left" className="lg:col-span-1 lg:row-span-1">
-              <figure>
-                <img
-                  src={img3}
-                  alt="Picture"
-                />
-              </figure>
-            </div>
-            <div  data-aos="flip-left" className="lg:col-span-1 lg:row-span-1">
-              <figure>
-                <img
-                  src={img4}
-                  alt="Picture"
-                />
-              </figure>
-            </div>
-            <div  data-aos="flip-left" className="lg:col-span-1 lg:row-span-1">
-              <figure>
-                <img
-                  src={img5}
-                  alt="Picture"
-                />
-              </figure>
-            </div>
-            <div  data-aos="flip-left" className="lg:col-span-1  lg:row-span-1">
-              <figure>
-                <img
-                  src={img6}
-                  alt="Picture"
-                />
-              </figure>
-            </div>
-          
-        </div>
+        <img src={gallery} alt="gallery" />
       </div>
+      <Gallery3></Gallery3>
     </div>
   );
 };

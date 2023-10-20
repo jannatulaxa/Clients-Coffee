@@ -6,22 +6,25 @@
     color: white; 
 }
 .serviceBanner{
-    background-image: url('../assets/banner/bg1.jpg');
+    background-image: url('../assets/banner/bg1.png');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.galleryBanner{
+    background-image: url('../assets/banner/bg2.png');
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     
-    /* opacity: 30%; */
-    background-blend-mode: multiply;
-    background-color: rgba(255, 255, 255, 0.678); 
-    color: black; 
 }
-.galleryBanner{
-    background-image: url('../assets/gallery/5.jpg');
-    width: 100%;
-    background-size: cover;
+/* .firstGalleryBg{
+    background-image: url('../assets/icons/leaf1.png');
+    width: 70%;
+    background-size:cover;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-color: rgba(12, 10, 10, 0.904); 
     color: white; 
-}
+} */
+
