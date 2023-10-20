@@ -4,7 +4,7 @@ const Cards = ({ data }) => {
   const handleBrandCatagory = (brandName) => {
     const lowarCaseBrandName = brandName.toLowerCase();
 
-    fetch("http://localhost:5000/addProducts", {
+    fetch("https://server-coffee-alpha.vercel.app/addProducts", {
       method: "POST", // Change to POST to send data to the backend
       headers: {
         "Content-Type": "application/json",

@@ -23,7 +23,7 @@ const AddProduct = () => {
     const isNotEmpty = Object.values(fullForm).some((value) => value === "");
 
     if (!isNotEmpty) {
-      fetch("http://localhost:5000/addProduct", {
+      fetch("https://server-coffee-alpha.vercel.app/addProduct", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

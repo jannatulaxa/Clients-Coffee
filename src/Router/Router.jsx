@@ -30,14 +30,14 @@ const Router = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: () =>
-          fetch("http://localhost:5000/addProduct"),
+          fetch("https://server-coffee-alpha.vercel.app/addProduct"),
       },
       {
         path: "/addProducts/:name",
         element: <Brands></Brands>,
         loader: ({ params }) =>
           fetch(
-            `http://localhost:5000/addProducts/${params.name.toLocaleLowerCase()}`
+            `https://server-coffee-alpha.vercel.app/addProducts/${params.name.toLocaleLowerCase()}`
           ),
       },
       {
@@ -56,7 +56,7 @@ const Router = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: () =>
-          fetch("http://localhost:5000/cartProduct"),
+          fetch("https://server-coffee-alpha.vercel.app/cartProduct"),
       },
       {
         path: "/update/:id",
@@ -67,7 +67,7 @@ const Router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `http://localhost:5000/addProduct/${params.id}`
+            `https://server-coffee-alpha.vercel.app/addProduct/${params.id}`
           ),
       },
       {

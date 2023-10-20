@@ -7,7 +7,7 @@ import sl4 from "../../assets/add/add4.jpeg";
 
 const Brands = () => {
   const findShoes = useLoaderData();
-  console.log(findShoes);
+  
 
   if (findShoes.length > 0) {
     if (findShoes.length < 4) {
