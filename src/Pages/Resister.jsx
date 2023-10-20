@@ -54,12 +54,12 @@ const Resister = () => {
 
   const googleResister = () => {
     googleLogin()
-      .then((result) => {
-        console.log(result.user);
+      .then(() => {
+        Swal.fire("Yeahh!", "Resistration Successfully Done", "success");
       })
       .catch((error) => {
         const errorMessage = error.message;
-        console.log(errorMessage);
+        Swal.fire("Opps!", errorMessage, "error");
       });
   };
 

@@ -32,7 +32,7 @@ const Login = () => {
       })
       .catch((error) => {
         const errorMessage = error.message;
-        Swal.fire(errorMessage);
+        Swal.fire("Opps!",errorMessage,"error");
       });
   };
 
