@@ -43,12 +43,12 @@ const handleAddToCart = () =>{
               <div className="card-body">
                 <h2 className="card-title">
                   {findData.name.toUpperCase()}
-                  <div className="badge bg-[#FFA800] text-white">NEW</div>
+                  <div className="badge bg-[#3B1E00] text-white">NEW</div>
                 </h2>
                 <p>{findData.description}</p>
                 <div className="card-actions justify-end">
                   
-                  <button onClick={handleAddToCart} className="btn border-0 bg-[#FFA800] text-white font-bold btn-sm">
+                  <button onClick={handleAddToCart} className="btn border-0 bg-[#3B1E00] text-white font-bold btn-sm">
                     Add to Cart
                   </button>
                 </div>
