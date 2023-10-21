@@ -1,4 +1,5 @@
 import Swal from "sweetalert2";
+import imLogo from "../assets/icons/01.png";
 
 const AddProduct = () => {
   const handleAdd = (e) => {
@@ -46,7 +47,16 @@ const AddProduct = () => {
 
   return (
     <div>
-    <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-center mt-10 underline">Adding Product </h1>
+      <div className="md:w-[40rem] mx-auto py-10">
+        <p className="font-bold font-serif text-xl md:text-3xl text-[#CF8613] text-center py-2">
+          Add Your Coffeé
+        </p>
+        <div className="flex justify-center  items-center gap-x-4">
+          <div className="w-[10rem] h-[1px] bg-[#CF8613]" />
+          <img className="w-[3rem]" src={imLogo} alt="imLogo" />
+          <div className="w-[10rem] h-[1px] bg-[#CF8613]" />
+        </div>
+      </div>
       <form
         onSubmit={handleAdd}
         className="lg:w-3/5 mx-auto bg-[#FFF9ED] p-10 my-10 rounded-lg"
