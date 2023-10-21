@@ -44,8 +44,8 @@ const Gallery2 = () => {
             />
           </div>
         </div>
-        <div className=" flex flex-col w-[20rem] mt-[4rem] lg:mt-0 md:w-[50rem] items-end">
-          <p className="text-2xl text-[#3B1E00]  font-semibold md:text-5xl text-end md:w-[45rem] -mt-[4rem] mb-[3rem]">
+        <div className=" flex flex-col w-[20rem] mt-[4rem] lg:mt-0 md:w-[40rem] lg:w-[50rem] items-end">
+          <p className="text-2xl text-[#3B1E00]  font-semibold md:text-5xl text-end md:w-[35rem] lg:w-[45rem] -mt-[4rem] mb-[3rem]">
             We believe this is the best coffee in New York. Try it for yourself
           </p>
           <p className=" md:text-3xl text-justify lg:ml-[12rem]">
