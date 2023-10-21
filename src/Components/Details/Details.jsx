@@ -34,11 +34,11 @@ const handleAddToCart = () =>{
   
     if (findData) {
       return (
-        <div>
+        <div className="">
           <div key={findData._id}>
-            <div className="card shadow-xl  bg-[#FFF9ED]">
+            <div className="card detailsBanner">
               <figure>
-                <img src={findData.photo} alt="Shoes" />
+                <img className="p-5 w-[30rem]  h-[30rem] mx-auto" src={findData.photo} alt="Shoes" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">

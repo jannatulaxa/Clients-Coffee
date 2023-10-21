@@ -6,7 +6,6 @@ import sl3 from "../../assets/add/add3.jpeg";
 import sl4 from "../../assets/add/add4.jpeg";
 import imLogo from "../../assets/icons/01.png";
 
-
 const Brands = () => {
   const findShoes = useLoaderData();
 
@@ -66,7 +65,7 @@ const Brands = () => {
 
           <div className="md:w-[40rem] mx-auto py-8">
             <p className="font-bold font-serif text-xl md:text-3xl text-[#CF8613] text-center py-2">
-            Choose your Coffeé
+            {findShoes[0].brand_name.toUpperCase()}
             </p>
             <div className="flex justify-center  items-center gap-x-4">
               <div className="w-[10rem] h-[1px] bg-[#CF8613]" />
@@ -82,18 +81,23 @@ const Brands = () => {
                   data-aos="flip-left"
                 >
                   <figure>
-                    <img className="h-80 w-full" src={shoes.photo} alt="Shoes" />
+                    <img
+                      className="h-80 w-full"
+                      src={shoes.photo}
+                      alt="Shoes"
+                    />
                   </figure>
                   <div className="card-body text-white">
                     <h2 className="font-bold text-2xl justify-center">
                       {shoes.name.toUpperCase()}
-                      
                     </h2>
                     {/* <div className="flex justify-center gap-5 my-5 items-center"> */}
-                      <h2 className="text-xl font-thin text-white">
-                        {shoes.brand_name.toUpperCase()}
-                      </h2>
-                      <h2 className="text-lg font-thin text-white">{shoes.type.toUpperCase()}</h2>
+                    <h2 className="text-xl font-thin text-white">
+                      {shoes.brand_name.toUpperCase()}
+                    </h2>
+                    <h2 className="text-lg font-thin text-white">
+                      {shoes.type.toUpperCase()}
+                    </h2>
                     {/* </div> */}
                     <div className="flex gap-x-2 justify-start items-center mb-5">
                       {Array(Math.floor(shoes.rating))
@@ -116,9 +120,9 @@ const Brands = () => {
                         ))}
                     </div>
 
-                      <button className=" mr-2 md:mr-[0.75rem] pb-5 border-0 text-3xl text-start  text-[#3B1E00] font-bold">
-                       Price : {shoes.price}
-                      </button>
+                    <button className=" mr-2 md:mr-[0.75rem] pb-5 border-0 text-3xl text-start  text-[#3B1E00] font-bold">
+                      Price : {shoes.price}
+                    </button>
                     <div className="card-actions justify-between">
                       <NavLink to={`/update/${shoes._id}`}>
                         <button className="btn mr-3 border-0 bg-[#3B1E00] text-white font-bold btn-sm">
@@ -147,7 +151,9 @@ const Brands = () => {
       return (
         <div className="galleryBanner">
           {/* Carousel Side */}
-          <div className="carousel w-full h-96 mt-10">
+          <div className="w-[70%] mx-auto pt-20">
+
+          <div className="carousel w-[100%] h-[15rem] mx-auto">
             <div id="slide1" className="carousel-item relative w-full">
               <img src={sl1} className="w-[98%] mx-auto" />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -193,10 +199,17 @@ const Brands = () => {
               </div>
             </div>
           </div>
+          </div>
 
-          <h1 className="text-2xl md:text-5xl font-bold text-center mt-10 mb-20 underline">
+          <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold text-center font-serif text-[#CF8613] pt-10 ">
+            {" "}
             {findShoes[0].brand_name.toUpperCase()}
           </h1>
+          <div className="flex justify-center  items-center gap-x-4 pb-12">
+            <div className="w-[2rem] md:w-[10rem] h-[1px] bg-[#CF8613]" />
+            <img className="w-[2rem] md:w-[3rem]" src={imLogo} alt="imLogo" />
+            <div className="w-[2rem] md:w-[10rem] h-[1px] bg-[#CF8613]" />
+          </div>
           <div className="grid grid-cols-1  lg:grid-cols-4  p-4 md:w-1/2 lg:w-11/12  md:mx-auto">
             {findShoes.map((shoes) => (
               <div key={shoes._id}>
@@ -205,19 +218,24 @@ const Brands = () => {
                   data-aos="flip-left"
                 >
                   <figure>
-                    <img className="h-80 w-full" src={shoes.photo} alt="Shoes" />
+                    <img
+                      className="h-80 w-full"
+                      src={shoes.photo}
+                      alt="Shoes"
+                    />
                   </figure>
                   <div className="card-body text-white">
                     <h2 className="font-bold text-2xl justify-center">
                       {shoes.name.toUpperCase()}
-                      
                     </h2>
-                    {/* <div className="flex justify-center gap-5 my-5 items-center"> */}
-                      <h2 className="text-xl font-thin text-white">
-                        {shoes.brand_name.toUpperCase()}
-                      </h2>
-                      <h2 className="text-lg font-thin text-white">{shoes.type.toUpperCase()}</h2>
-                    {/* </div> */}
+
+                    <h2 className="text-xl font-thin text-white">
+                      {shoes.brand_name.toUpperCase()}
+                    </h2>
+                    <h2 className="text-lg font-thin text-white">
+                      {shoes.type.toUpperCase()}
+                    </h2>
+
                     <div className="flex gap-x-2 justify-start items-center mb-5">
                       {Array(Math.floor(shoes.rating))
                         .fill("")
@@ -239,9 +257,9 @@ const Brands = () => {
                         ))}
                     </div>
 
-                      <button className=" mr-2 md:mr-[0.75rem] pb-5 border-0 text-3xl text-start  text-[#3B1E00] font-bold">
-                       Price : {shoes.price}
-                      </button>
+                    <button className=" mr-2 md:mr-[0.75rem] pb-5 border-0 text-3xl text-start  text-[#3B1E00] font-bold">
+                      Price : {shoes.price}
+                    </button>
                     <div className="card-actions justify-between">
                       <NavLink to={`/update/${shoes._id}`}>
                         <button className="btn mr-3 border-0 bg-[#3B1E00] text-white font-bold btn-sm">

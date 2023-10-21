@@ -1,4 +1,3 @@
-
 import imLogo from "../assets/icons/01.png"
 
 const Banner = () => {
