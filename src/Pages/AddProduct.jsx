@@ -46,8 +46,8 @@ const AddProduct = () => {
   };
 
   return (
-    <div>
-      <div className="md:w-[40rem] mx-auto py-10">
+    <div className="galleryBanner">
+      <div className="md:w-[40rem] mx-auto py-10 ">
         <p className="font-bold font-serif text-xl md:text-3xl text-[#CF8613] text-center py-2">
           Add Your Coffeé
         </p>
@@ -59,7 +59,7 @@ const AddProduct = () => {
       </div>
       <form
         onSubmit={handleAdd}
-        className="lg:w-3/5 mx-auto bg-[#FFF9ED] p-10 my-10 rounded-lg"
+        className="lg:w-3/5 mx-auto bg-[#FFF9ED] p-10 py-10 rounded-lg"
       >
         <div className=" flex flex-col lg:flex-row gap-12 mb-10">
           <label className="input-group md:w-4/5 lg:w-1/2 mx-auto lg:input-group-md">

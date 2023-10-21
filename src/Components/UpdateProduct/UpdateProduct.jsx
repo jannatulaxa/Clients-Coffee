@@ -37,7 +37,7 @@ const UpdateProduct = () => {
   };
 
   return (
-    <div>
+    <div className="galleryBanner">
       <div className="md:w-[40rem] mx-auto py-10">
         <p className="font-bold font-serif text-xl md:text-3xl text-[#CF8613] text-center py-2">
           Update Your {name}

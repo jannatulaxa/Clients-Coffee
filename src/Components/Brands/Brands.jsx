@@ -1,9 +1,9 @@
 import { NavLink, useLoaderData } from "react-router-dom";
 // import "./Brands.css";
-import sl1 from "../../assets/add/add1.jpeg";
-import sl2 from "../../assets/add/add2.jpeg";
-import sl3 from "../../assets/add/add3.jpeg";
-import sl4 from "../../assets/add/add4.jpeg";
+import sl4 from "../../assets/add/add1.jpeg";
+import sl1 from "../../assets/add/add2.jpg";
+import sl3 from "../../assets/add/add3.jpg";
+import sl2 from "../../assets/add/add4.jpeg";
 import imLogo from "../../assets/icons/01.png";
 
 const Brands = () => {
