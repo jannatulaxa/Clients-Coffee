@@ -44,7 +44,7 @@ const UpdateProduct = () => {
       >
         <div className=" flex flex-col lg:flex-row gap-12 mb-10">
           <label className="input-group md:w-4/5 lg:w-1/2 mx-auto lg:input-group-md">
-            <span className="w-[10rem] bg-[#FFA800] text-white font-bold">
+            <span className="w-[10rem] bg-[#3B1E00] text-white font-bold">
               Name
             </span>
             <input
@@ -56,7 +56,7 @@ const UpdateProduct = () => {
             />
           </label>
           <label className="input-group md:w-4/5 lg:w-1/2 mx-auto lg:input-group-md">
-            <span className="w-[10rem] bg-[#FFA800] text-white font-bold">
+            <span className="w-[10rem] bg-[#3B1E00] text-white font-bold">
               Brand Name
             </span>
             <input
@@ -70,7 +70,7 @@ const UpdateProduct = () => {
         </div>
         <div className="  flex flex-col lg:flex-row gap-12 mb-10">
           <label className="input-group md:w-4/5 lg:w-1/2 mx-auto lg:input-group-md">
-            <span className="w-[10rem] bg-[#FFA800] text-white font-bold">
+            <span className="w-[10rem] bg-[#3B1E00] text-white font-bold">
               Type
             </span>
             <input
@@ -82,7 +82,7 @@ const UpdateProduct = () => {
             />
           </label>
           <label className="input-group md:w-4/5 lg:w-1/2 mx-auto lg:input-group-md">
-            <span className="w-[10rem] bg-[#FFA800] text-white font-bold">
+            <span className="w-[10rem] bg-[#3B1E00] text-white font-bold">
               Price
             </span>
             <input
@@ -96,7 +96,7 @@ const UpdateProduct = () => {
         </div>
         <div className=" flex flex-col lg:flex-row gap-12 mb-10">
           <label className="input-group md:w-4/5 lg:w-1/2 mx-auto lg:input-group-md">
-            <span className="w-[10rem] bg-[#FFA800] text-white font-bold">
+            <span className="w-[10rem] bg-[#3B1E00] text-white font-bold">
               Description
             </span>
             <input
@@ -108,7 +108,7 @@ const UpdateProduct = () => {
             />
           </label>
           <label className="input-group md:w-4/5 lg:w-1/2 mx-auto lg:input-group-md">
-            <span className="w-[10rem] bg-[#FFA800] text-white font-bold">
+            <span className="w-[10rem] bg-[#3B1E00] text-white font-bold">
               Rating
             </span>
             <input
@@ -122,7 +122,7 @@ const UpdateProduct = () => {
         </div>
 
         <label className="input-group md:w-4/5 lg:w-full mx-auto input-group-md mb-10">
-          <span className="w-[10rem] bg-[#FFA800] text-white font-bold">
+          <span className="w-[10rem] bg-[#3B1E00] text-white font-bold">
             Photo URL
           </span>
           <input
@@ -134,7 +134,7 @@ const UpdateProduct = () => {
           />
         </label>
         <input
-          className="w-full text-center btn text-white text-bold text-lg bg-[#FFA800]"
+          className="w-full text-center btn text-white text-bold text-lg bg-[#3B1E00]"
           type="submit"
           value="Add"
         />

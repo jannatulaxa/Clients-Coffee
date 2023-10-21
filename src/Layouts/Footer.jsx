@@ -47,7 +47,7 @@ const Footer = () => {
                 <input
                   type="text"
                   placeholder="username@site.com"
-                  className="input border-t-0 border-l-0  border-b-2 border-[#CF8613CC] w-full pr-16 bg-[#3B1E00]"
+                  className="input border-t-0 border-l-0 bg-[#CF861326] border-b-[1px] border-[#CF8613CC] w-full pr-16 bg-[#3B1E00]"
                 />
                 <button className="btn bg-[#CF8613CC] text-white font-bold border-0 absolute top-0 right-0 rounded-l-none">
                   Send
