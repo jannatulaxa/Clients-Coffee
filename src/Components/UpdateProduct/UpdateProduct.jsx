@@ -40,7 +40,7 @@ const UpdateProduct = () => {
     <div>
       <div className="md:w-[40rem] mx-auto py-10">
         <p className="font-bold font-serif text-xl md:text-3xl text-[#CF8613] text-center py-2">
-          Add Your {name.toUpperCase()}
+          Update Your {name}
         </p>
         <div className="flex justify-center  items-center gap-x-4">
           <div className="w-[10rem] h-[1px] bg-[#CF8613]" />
@@ -147,7 +147,7 @@ const UpdateProduct = () => {
         <input
           className="w-full text-center btn text-white text-bold text-lg bg-[#3B1E00]"
           type="submit"
-          value="Add"
+          value="Update"
         />
       </form>
     </div>

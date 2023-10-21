@@ -14,9 +14,7 @@ const Navbar = () => {
 
   const navitems = (
     <>
-      <li><NavLink to="/" className={({ isActive, isPending }) => isPending ? "text-black font-semibold" : isActive ? " text-[#CF8613] underline font-semibold" : "text-white font-semibold"}> Home</NavLink></li>
-      <li><NavLink to="/artist" className={({ isActive, isPending }) => isPending ? "black-white font-semibold" : isActive ? " text-[#CF8613] underline font-semibold" : "text-white font-semibold"}>Menu</NavLink></li>
-      
+      <li><NavLink to="/" className={({ isActive, isPending }) => isPending ? "text-black font-semibold" : isActive ? " text-[#CF8613] underline font-semibold" : "text-white font-semibold"}> Home</NavLink></li>      
       <li><NavLink to="/addProducts" className={({ isActive, isPending }) => isPending ? "text-black font-semibold" : isActive ? " text-[#CF8613] underline font-semibold" : "text-white font-semibold"}>Add Product</NavLink></li>
       <li><NavLink to="/myCart" className={({ isActive, isPending }) => isPending ? "text-black font-semibold" : isActive ? " text-[#CF8613] underline font-semibold" : "text-white font-semibold"}>My Cart</NavLink></li>
       
