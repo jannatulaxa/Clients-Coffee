@@ -1,8 +1,8 @@
-# React + Vite
+# About My Project:
+1. Client Can Choose His/Her Coffee Items.
+2. Admin Can Add And Update Coffees White Proper Information.
+3. User Can Add Coffees in cart and also delete from the cart.
+4. User need to Resister/login first to see details and add to cart.
+5. Here also Used Two type of Themes: light and Cupcake. User Can Use it.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
