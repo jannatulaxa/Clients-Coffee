@@ -9,7 +9,7 @@ const Gallery3 = () => {
   return (
     <div>
       <div className="md:w-[40rem] mx-auto pb-16">
-        <p className="font-bold text-xl md:text-3xl text-[#CF8613] text-center py-2">
+        <p className="font-serif font-bold text-xl md:text-3xl text-[#CF8613] text-center py-2">
           Feture And Services
         </p>
         <div className="flex justify-center  items-center gap-x-4">
@@ -18,8 +18,8 @@ const Gallery3 = () => {
           <div className="w-[10rem] h-[1px] bg-[#CF8613]" />
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 justify-center items-center w-[95%] mx-auto">
-        <div className="w-[18rem] mx-auto h-[20rem] pb-10">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 justify-center items-center w-[95%] mx-auto">
+        <div className="w-[13rem] mx-auto h-[20rem] pb-10">
           <div className="flex justify-center">
             <img className="w-[4rem] h-[5rem]" src={imLogo1} alt="image" />
           </div>
@@ -31,7 +31,7 @@ const Gallery3 = () => {
             coffee plant (either Coffea robusta or Coffea arabica)
           </p>
         </div>
-        <div className="w-[18rem] mx-auto h-[20rem] pb-10">
+        <div className="w-[13rem] mx-auto h-[20rem] pb-10">
           <div className="flex justify-center">
             <img className="w-[4rem] h-[5rem]" src={imLogo2} alt="image" />
           </div>
@@ -43,7 +43,7 @@ const Gallery3 = () => {
             coffee. It is the pip inside the red or purple fruit.
           </p>
         </div>
-        <div className="w-[18rem] mx-auto h-[20rem] pb-10">
+        <div className="w-[13rem] mx-auto h-[20rem] pb-10">
           <div className="flex justify-center">
             <img className="w-[4rem] h-[5rem]" src={imLogo3} alt="image" />
           </div>
@@ -54,7 +54,7 @@ const Gallery3 = () => {
           Coffee is a beverage prepared from roasted coffee beans. Darkly colored, bitter, and slightly acidic
           </p>
         </div>
-        <div className="w-[18rem] mx-auto h-[20rem] pb-10">
+        <div className="w-[13rem] mx-auto h-[20rem] pb-10">
           <div className="flex justify-center">
             <img className="w-[4rem] h-[5rem]" src={imLogo4} alt="image" />
           </div>
@@ -65,7 +65,7 @@ const Gallery3 = () => {
           The history of coffee dates back to centuries of old oral tradition in modern-day Ethiopia and Yemen.
           </p>
         </div>
-        <div className="w-[18rem] mx-auto h-[20rem] pb-10">
+        <div className="w-[13rem] mx-auto h-[20rem] pb-10">
           <div className="flex justify-center">
             <img className="w-[4rem] h-[5rem] h-20" src={imLogo5} alt="image" />
           </div>

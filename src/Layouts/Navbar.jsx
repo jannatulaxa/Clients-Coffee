@@ -2,6 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import { BsPersonCircle } from "react-icons/Bs";
 import usePrivateHook from "../Hooks/usePrivateHook";
 import logo from "../../src/assets/Logo.png";
+import Theme from "../Components/Theme/Theme";
 
 const Navbar = () => {
   const { user, logOut } = usePrivateHook();
@@ -80,6 +81,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end col-span-3 hidden lg:flex lg:w-[70%]">
           <ul className="gap-5 menu-horizontal text-white px-1 ">{navitems}</ul>
+          <Theme></Theme>
         </div>
         <div className="navbar-end">
           {user != null ? (

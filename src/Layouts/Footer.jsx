@@ -6,28 +6,28 @@ import { BsLinkedin, BsTwitter } from "react-icons/Bs";
 const Footer = () => {
   return (
     <div className="bg-[#3B1E00]">
-      <div className="w-[80%] mx-auto">
-        <footer className="footer md:grid-rows-4 md:grid-cols-3 lg:grid-cols-3 lg:grid-rows-1 py-10 lg:pl-28 text-[#CF8613]">
+      <div className="w-[90%] mx-auto">
+        <footer className="footer md:grid-rows-4 md:grid-cols-3 lg:grid-cols-3 lg:grid-rows-1 py-10  text-[#CF8613]">
           <nav className="text-lg">
-            <header className=" font-bold text-white">YOUR ACCOUNT</header>
-            <a className="link link-hover">Running Shoes</a>
-            <a className="link link-hover">Football Shoes</a>
-            <a className="link link-hover">Basketball Shoes</a>
+            <header className="text-2xl font-serif  font-bold text-white">Company</header>
+            <a className="link link-hover">OUR COMPANY</a>
+            <a className="link link-hover">OUR COFFEEs</a>
+            <a className="link link-hover">OUR COFFEE STORES</a>
             <a className="link link-hover">Volleyball Shoes</a>
-            <a className="link link-hover">Trainee Shoes</a>
+            <a className="link link-hover">STORIES & NEWS</a>
           </nav>
           <nav className="text-lg">
-            <header className="font-bold text-white">INFORMATION</header>
-            <a className="link link-hover">Returns</a>
-            <a className="link link-hover">F.A.Q</a>
-            <a className="link link-hover">Shipping Policy</a>
-            <a className="link link-hover">Search Terms</a>
-            <a className="link link-hover">Contact Us</a>
+            <header className="text-2xl font-serif font-bold text-white">Services</header>
+            <a className="link link-hover">BREWING GUIDE</a>
+            <a className="link link-hover">MENU</a>
+            <a className="link link-hover">COFFEE SHOP</a>
+            <a className="link link-hover">RESERVATIONS</a>
+            
           </nav>
           <nav className="text-lg">
-            <header className="font-bold text-white">HAPPY HOURS</header>
-            <a className="link link-hover">Monday - Friday</a>
-            <a className="link link-hover">8a.m - 10 p.m</a>
+            <header className="text-2xl font-serif font-bold text-white">Contact</header>
+            <a className="link link-hover">1000 S Eighth Ave, New York 0019</a>
+            <a className="link link-hover">Phone (646) 652-9813</a>
             <a className="link link-hover">Saturday & Sunday</a>
             <a className="link link-hover">10a.m - 8 p.m</a>
           </nav>

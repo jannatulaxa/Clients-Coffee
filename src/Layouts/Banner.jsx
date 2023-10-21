@@ -5,11 +5,11 @@ const Banner = () => {
   return (
     <div className="banner flex justify-start items-center h-[40rem] -mt-36">
       <div className="text-center  p-[1rem] md:p-[5.5rem] mt-[7rem]">
-        <p className="font-bold lg:text-8xl md:text-5xl text-2xl">COFFEE PALACE</p>
+        <p className="font-serif font-bold lg:text-8xl md:text-5xl text-2xl">COFFEE PALACE</p>
         <div className="flex justify-center  items-center gap-x-4"><div className="md:w-[10rem] h-[1px] bg-[#CF8613]" />
         <img className="w-[3rem]" src={imLogo} alt="imLogo" />
         <div className="md:w-[10rem] h-[1px] bg-[#CF8613]" /></div>
-        <p className=" w-[20rem] mt-8 mb-4 italic text-2xl text-justify">
+        <p className=" w-[38rem] mt-8 mb-4 italic text-2xl text-justify">
           You know the various flavor profiles of said beans, you know the
           different ways to brew a cup, and you know all the specialty coffee
           drinks that exist.

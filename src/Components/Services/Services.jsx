@@ -6,7 +6,7 @@ const Services = ({ data }) => {
   return (
     <div className="serviceBanner">
       <div className="md:w-[40rem] mx-auto py-5 pb-10">
-        <p className="font-bold text-xl md:text-3xl text-[#CF8613] text-center py-2">
+        <p className="font-bold font-serif text-xl md:text-3xl text-[#CF8613] text-center py-2">
         Our coffee brands
         </p>
         <div className="flex justify-center  items-center gap-x-4"><div className="w-[10rem] h-[1px] bg-[#CF8613]" />

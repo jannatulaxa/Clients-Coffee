@@ -7,7 +7,7 @@ const Gallery2 = () => {
   return (
     <div className="w-[88%] mx-auto pb-10">
       <div className="md:w-[40rem] mx-auto pb-20">
-        <p className="font-bold text-xl md:text-3xl text-[#CF8613] text-center py-2">
+        <p className="font-bold font-serif text-xl md:text-3xl text-[#CF8613] text-center py-2">
           Unique coffee experiences
         </p>
         <div className="flex justify-center  items-center gap-x-4">
@@ -16,7 +16,7 @@ const Gallery2 = () => {
           <div className="w-[10rem] h-[1px] bg-[#CF8613]" />
         </div>
       </div>
-      <div className="flex flex-col lg:w-[70rem] mx-auto justify-center items-center lg:flex-row">
+      <div className="flex flex-col lg:w-[80rem] mx-auto justify-center items-center lg:flex-row">
         <div className="flex-1 lg:mt-[4rem] relative w-[23rem] md:w-[40rem] lg:w-[70rem] h-80 md:h-[25rem] pb-4 border-2 lg:border-0 ">
           <div className=" ml-[4rem] absolute z-10 ">
             <img
@@ -44,8 +44,8 @@ const Gallery2 = () => {
             />
           </div>
         </div>
-        <div className=" flex flex-col w-[20rem] mt-[4rem] lg:mt-0 md:w-[40rem] items-end">
-          <p className="text-2xl font-semibold md:text-5xl text-end md:w-[45rem] mb-[3rem]">
+        <div className=" flex flex-col w-[20rem] mt-[4rem] lg:mt-0 md:w-[50rem] items-end">
+          <p className="text-2xl text-[#3B1E00]  font-semibold md:text-5xl text-end md:w-[45rem] -mt-[4rem] mb-[3rem]">
             We believe this is the best coffee in New York. Try it for yourself
           </p>
           <p className=" md:text-3xl text-justify lg:ml-[12rem]">
