@@ -10,6 +10,7 @@ import MyCart from "../Pages/MyCart";
 import Brands from "../Components/Brands/Brands";
 import Details from "../Components/Details/Details";
 import UpdateProduct from "../Components/UpdateProduct/UpdateProduct";
+import Payments from "../Components/Payments/Payments";
 
 const Router = createBrowserRouter([
   {
@@ -69,6 +70,10 @@ const Router = createBrowserRouter([
           fetch(
             `https://server-coffee-alpha.vercel.app/addProduct/${params.id}`
           ),
+      },
+      {
+        path: "/pay",
+        element: <PrivateRoutes> <Payments></Payments></PrivateRoutes>,
       },
       {
         path: "/login",

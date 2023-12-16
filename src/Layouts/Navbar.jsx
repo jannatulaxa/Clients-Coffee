@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const navitems = (
     <>
-      <li><NavLink to="/" className={({ isActive, isPending }) => isPending ? "text-black font-semibold" : isActive ? " text-[#CF8613] underline font-semibold" : "text-white font-semibold"}> Home</NavLink></li>      
+      <li><NavLink to="/" className={({ isActive, isPending }) => isPending ? "text-black font-semibold" : isActive ? " text-[#CF8613] underline font-semibold" : "text-white font-semibold" }> Home</NavLink></li>      
       <li><NavLink to="/addProducts" className={({ isActive, isPending }) => isPending ? "text-black font-semibold" : isActive ? " text-[#CF8613] underline font-semibold" : "text-white font-semibold"}>Add Product</NavLink></li>
       <li><NavLink to="/myCart" className={({ isActive, isPending }) => isPending ? "text-black font-semibold" : isActive ? " text-[#CF8613] underline font-semibold" : "text-white font-semibold"}>My Cart</NavLink></li>
       
@@ -120,7 +120,7 @@ const Navbar = () => {
                 Login
               </Link>
               <Link
-                to={"/resister"}
+                to={"/register"}
                 className=" bg-[#CF8613] px-4 py-2 rounded-lg  text-white font-bold border-2 border-[#CF8613] bg-transparent"
               >
                 Resistration

@@ -13,7 +13,8 @@ const Banner = () => {
           different ways to brew a cup, and you know all the specialty coffee
           drinks that exist.
         </p>
-      <p className="text-start text-xl italic text-[#CF8613]">There’s a little love in every cup.....</p>
+      
+      <p className="text-start text-xl italic text-[white]">There’s a little love in every cup.....</p>
       </div>
     </div>
   );

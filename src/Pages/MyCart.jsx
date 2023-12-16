@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
-import imLogo from "../assets/icons/01.png"
-
+import imLogo from "../assets/icons/01.png";
 
 const MyCart = () => {
   const findCartProducts = useLoaderData();
@@ -36,16 +35,28 @@ const MyCart = () => {
       }
     });
   };
-  console.log(items);
+
   if (items.length > 0) {
     return (
       <div className="galleryBanner">
-        <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold text-center font-serif text-[#CF8613] pt-10 "> Your Selected Products
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold text-center font-serif text-[#CF8613] pt-10 ">
+          {" "}
+          Your Selected Products
         </h1>
-        <div className="flex justify-center  items-center gap-x-4 pb-12"><div className="w-[2rem] md:w-[10rem] h-[1px] bg-[#CF8613]" />
-        <img className="w-[2rem] md:w-[3rem]" src={imLogo} alt="imLogo" />
-        <div className="w-[2rem] md:w-[10rem] h-[1px] bg-[#CF8613]" /></div>
-         
+        <div className="text-right pr-20">
+          <Link to={"/pay"}
+            
+            className="btn bg-[#3B1E00] border-0 text-white font-bold btn-sm"
+          >
+            Purches
+          </Link>
+        </div>
+        <div className="flex justify-center  items-center gap-x-4 pb-12">
+          <div className="w-[2rem] md:w-[10rem] h-[1px] bg-[#CF8613]" />
+          <img className="w-[2rem] md:w-[3rem]" src={imLogo} alt="imLogo" />
+          <div className="w-[2rem] md:w-[10rem] h-[1px] bg-[#CF8613]" />
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2  p-4 md:w-1/2 lg:w-7/12  md:mx-auto">
           {items.map((shoes) => (
             <div key={shoes._id}>
@@ -88,10 +99,9 @@ const MyCart = () => {
                       ))}
                   </div>
                   <button className=" mr-2 md:mr-[0.75rem] pb-5 border-0 text-3xl text-start  text-[#3B1E00] font-bold">
-                      Price : {shoes.price}
-                    </button>
+                    Price : {shoes.price}
+                  </button>
                   <div className="card-actions justify-end">
-                    
                     <button
                       onClick={() => handleDelete(shoes._id)}
                       className="btn bg-[#3B1E00] border-0 text-white font-bold btn-sm"
