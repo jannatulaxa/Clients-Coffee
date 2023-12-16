@@ -11,6 +11,7 @@ import Brands from "../Components/Brands/Brands";
 import Details from "../Components/Details/Details";
 import UpdateProduct from "../Components/UpdateProduct/UpdateProduct";
 import Payments from "../Components/Payments/Payments";
+import Review from "../Components/Review/Review";
 
 const Router = createBrowserRouter([
   {
@@ -32,6 +33,15 @@ const Router = createBrowserRouter([
         ),
         loader: () =>
           fetch("https://server-coffee-alpha.vercel.app/addProduct"),
+      },
+      {
+        path: "/review/:id",
+        element: (
+          <PrivateRoutes>
+            <Review></Review>
+          </PrivateRoutes>
+        ),
+        loader: ({params}) => fetch(`https://server-coffee-alpha.vercel.app/reviewProducts/${params.id}`),
       },
       {
         path: "/addProducts/:name",
@@ -80,7 +90,7 @@ const Router = createBrowserRouter([
         element: <Login></Login>,
       },
       {
-        path: "/resister",
+        path: "/register",
         element: <Resister></Resister>,
       },
     ],

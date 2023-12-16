@@ -18,7 +18,7 @@ const Cards = ({ data }) => {
   return (
     <>
       {data.map((card) => (
-        <div key={card.id}>
+        <div key={card.id} className="hover:shadow-2xl">
           <NavLink
             onClick={() => handleBrandCatagory(card.brand_name)}
             to={`/addProducts/${card.brand_name}`}

@@ -44,6 +44,7 @@ const MyCart = () => {
           Your Selected Products
         </h1>
         <div className="text-right pr-20">
+          
           <Link to={"/pay"}
             
             className="btn bg-[#3B1E00] border-0 text-white font-bold btn-sm"
@@ -81,9 +82,9 @@ const MyCart = () => {
                   <div className="flex gap-x-2 justify-start items-center mb-5">
                     {Array(Math.floor(shoes.rating))
                       .fill("")
-                      .map((rate) => (
+                      .map((rate,index) => (
                         <svg
-                          key={rate.id}
+                          key={index}
                           xmlns="http://www.w3.org/2000/svg"
                           width="20"
                           height="20"
@@ -102,6 +103,12 @@ const MyCart = () => {
                     Price : {shoes.price}
                   </button>
                   <div className="card-actions justify-end">
+                  <Link
+                      to={`/review/${shoes.cartid}`}
+                      className="btn bg-[#3B1E00] border-0 text-white font-bold btn-sm mr-10"
+                    >
+                      Give Review
+                    </Link>
                     <button
                       onClick={() => handleDelete(shoes._id)}
                       className="btn bg-[#3B1E00] border-0 text-white font-bold btn-sm"

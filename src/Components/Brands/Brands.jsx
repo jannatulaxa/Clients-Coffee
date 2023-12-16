@@ -9,6 +9,7 @@ import imLogo from "../../assets/icons/01.png";
 const Brands = () => {
   const findShoes = useLoaderData();
 
+
   if (findShoes.length > 0) {
     if (findShoes.length < 4) {
       let remainCard = 4 - findShoes.length;

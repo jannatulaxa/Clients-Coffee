@@ -21,7 +21,7 @@
 .detailsBanner{
     background-image: url('../assets/banner/bg2.png');
     width: 100%;
-    height: 40rem;
+    /* height: 40rem; */
     background-size: cover;
     background-repeat: no-repeat;
     
